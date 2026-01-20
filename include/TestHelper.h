@@ -20,7 +20,8 @@ public:
         }
         const auto &end = high_resolution_clock::now();
         const auto &totalTime = (end - start).count();
-        std::cout << "[" << name << "] average fn() us: " << std::fixed << std::setprecision(3) << totalTime / 1000.0 / N << std::endl;
+        std::cout << "[" << name << "] average fn() us: " << std::fixed << std::setprecision(3)
+                  << totalTime / 1000.0 / N << std::endl;
     }
 };
 
